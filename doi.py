@@ -15,6 +15,7 @@ Create a function to determine our gas level and closest gas station
     - Print gas level
     - Print Closest Gas Station
 """
+
 # Import Libraries Here
 import random
 
@@ -26,6 +27,13 @@ def gasLevelGauge():
     return currentGasLevel
 
 print(gasLevelGauge())
+
+def listOfGasStations():
+    gasStations = ["Shell","Costco","buccee","Speedway","7-11","Cricle-K","Meijer","Marathon"]
+    gasStationNearBy = random.choice(gasStations)
+    print(gasStationNearBy)
+    return gasStationNearBy
+
 
 
 
