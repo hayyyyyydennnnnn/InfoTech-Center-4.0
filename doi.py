@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #Programmer: Hayden Coates
 #Date: 1/24/23
 #Program: InfoTech 4.0
@@ -29,7 +29,7 @@ while x != 20:
         a = 0
     if x == 20:
         print('\n\n\033[1;32;40mMission Accomplished')
-=======
+
 # Programmer: Hayden Coates
 # Date: 1.30.2023
 # Program: Infotech Center 4.0 - Gasoline
@@ -111,5 +111,5 @@ gasLevelAlert()
 
 
 
->>>>>>> Gasoline
+
 
