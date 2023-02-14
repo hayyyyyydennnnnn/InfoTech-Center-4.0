@@ -1,4 +1,5 @@
 
+
 #Programmer: Hayden Coates
 #Date: 1/24/23
 #Program: InfoTech 4.0
@@ -11,9 +12,11 @@ drivers know that the InfoTech Center 4.0 OS is loading
 #Import Libraries Here
 import time
 import sys  # I imported the system library for further use in code.
+import colorama
+from colorama import Fore, Back
 
 timeToSleep = 2
-print("\n\n\033[1;33;40mWelcome - InfotechCenter... 4.0\n")
+print(Fore.GREEN + "[1;33;40mWelcome - InfotechCenter... 4.0\n")
 time.sleep(timeToSleep)
 
 #print("\nInfotech Center 4.0 OS is loading")
@@ -22,13 +25,13 @@ a = 0
 
 while x != 20:
     x += 1
-    b = ("\033[1;33;40mInfotech Center 4.0 OS is loading" + "." * a)
+    b = (Fore.GREEN + "[1;33;40mInfotech Center 4.0 OS is loading" + "." * a)
     sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
     time.sleep(0.5)
     if a == 4:
         a = 0
     if x == 20:
-        print('\n\n\033[1;32;40mMission Accomplished')
+        print(Fore.GREEN +"[1;32;40mMission Accomplished")
 
 # Programmer: Hayden Coates
 # Date: 1.30.2023
@@ -73,27 +76,27 @@ def gasLevelAlert():
     milesToGasStaionLow = round(random.uniform(1, 25), 2)
     milesToGasStaionQuarterTank = round(random.uniform(26, 50), 2)
     if gasLevelIndicator == "Empty":
-        print("\n***WARNING YOU ARE ON EMPTY***")
+        print(Fore.GREEN + "\n***WARNING YOU ARE ON EMPTY***")
         sleep(1)
-        print("Calling Emergency Contact")
+        print(Fore.GREEN +"Calling Emergency Contact")
     elif gasLevelIndicator == "Low":
-        print("\n****Warning****")
+        print(Fore.GREEN +"\n****Warning****")
         sleep(1)
-        print("\nYour Gas Tank is very low, checking Google Maps for the closest Gas Station.")
+        print(Fore.GREEN +"\nYour Gas Tank is very low, checking Google Maps for the closest Gas Station.")
         sleep(1)
-        print("\nThe closest gas station is", listOfGasStations(), "whitch is", milesToGasStaionLow,"miles away")
+        print(Fore.GREEN +"\nThe closest gas station is", listOfGasStations(), "whitch is", milesToGasStaionLow,"miles away")
     elif gasLevelIndicator == "Quarter":
-        print("\n***Warning***")
+        print(Fore.GREEN +"\n***Warning***")
         sleep(1)
-        print("\nYour gas tank is at a Quarter Tank and the closest gas station is", listOfGasStations(), "whitch is", milesToGasStaionQuarterTank,"miles away.")
+        print(Fore.GREEN +"\nYour gas tank is at a Quarter Tank and the closest gas station is", listOfGasStations(), "whitch is", milesToGasStaionQuarterTank,"miles away.")
     elif gasLevelIndicator == "Half Tank":
-        print("\nYour gas tank is half full witch is plenty of gas to make it to your destinations today.")
+        print(Fore.GREEN +"\nYour gas tank is half full witch is plenty of gas to make it to your destinations today.")
     elif gasLevelIndicator == "Three Quarter Tank":
-        print("\nYour gas tank is three quarters full witch is plenty of gas to make it to your destinations today.")
+        print(Fore.GREEN +"\nYour gas tank is three quarters full witch is plenty of gas to make it to your destinations today.")
     elif gasLevelIndicator == "Full Tank":
-        print("\nYour gas tank is full witch is plenty of gas to make it to your destinations today.")
+        print(Fore.GREEN +"\nYour gas tank is full witch is plenty of gas to make it to your destinations today.")
     else:
-        print("\nyour gas tank is Full - Yeah! - Congrats - Vroom Vroom")
+        print(Fore.GREEN +"\nyour gas tank is Full - Yeah! - Congrats - Vroom Vroom")
 
 
 
