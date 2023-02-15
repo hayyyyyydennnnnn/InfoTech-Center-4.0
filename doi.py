@@ -16,7 +16,7 @@ import colorama
 from colorama import Fore, Back
 
 timeToSleep = 2
-print(Fore.GREEN + "[1;33;40mWelcome - InfotechCenter... 4.0\n")
+print(Fore.GREEN + "Welcome - InfotechCenter 4.0\n")
 time.sleep(timeToSleep)
 
 #print("\nInfotech Center 4.0 OS is loading")
@@ -25,13 +25,13 @@ a = 0
 
 while x != 20:
     x += 1
-    b = (Fore.GREEN + "[1;33;40mInfotech Center 4.0 OS is loading" + "." * a)
+    b = (Fore.GREEN + "Infotech Center 4.0 OS is loading - " + "." * a)
     sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
     time.sleep(0.5)
     if a == 4:
         a = 0
     if x == 20:
-        print(Fore.GREEN +"[1;32;40mMission Accomplished")
+        print(Fore.GREEN +"Mission Accomplished!")
 
 # Programmer: Hayden Coates
 # Date: 1.30.2023
@@ -156,7 +156,7 @@ def vehicleResponseSystem():
 
 
 # Call Function Here
-print("\nNational Weather Service is checking conditions")
+print("\nNational Weather Service is checking conditions...")
 sleep(2)
 print(weatherAlert)
 vehicleResponseSystem()
