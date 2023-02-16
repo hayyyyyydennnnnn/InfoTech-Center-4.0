@@ -18,3 +18,16 @@ def gasLevelGauge():
 
 # Variable calling gasLevelGauge function to store its value
 gasLevelIndicator = gasLevelGauge()
+
+
+#List of Restaurants Function
+def listOfRestaurants():
+    Restaurants = ["Olive Garden","Red Robin","Texas RoadHouse","Panera","Panda Express","Red Lobster","Cheese Cake Factory","The Mealting-Pot"]
+    RestaurantsNearBy = random.choice(Restaurants)
+    return RestuarantsNearBy
+
+    #List of Fast Food Restaurants Function
+def listOfFastFoodRestaurants():
+    Restaurants = ["Mc-Donalds","Subway","Taco-Bell","Little Chessers","Culver's","BurgerKing","Wendys","KFC"]
+    FastFoodRestaurantsNearBy = random.choice(FastFoodRestaurants)
+    return FastFoodRestuarantsNearBy
